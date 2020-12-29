@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="BIENVENIDO"
+        android:textColor="#E2000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tituloformulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ingrese los datos de la recarga"
+        android:textColor="#E2000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:drawableRight="@drawable/ic_clave"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:inputType="number"
+        android:paddingEnd="20dp"
+        android:hint="Ingrese el numero a recargar"
+        android:layout_below="@id/tituloformulario"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/confirmacionnumero"
+        android:drawableRight="@drawable/ic_clave"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="number"
+        android:hint="Confirme el numero a recargar"
+        android:layout_below="@id/numero"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/valor"
+        android:drawableRight="@drawable/ic_clave"
+        android:layout_below="@+id/confirmacionnumero"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="number"
+        android:hint="Ingrese el valor de la recarga"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/confirmacionvalor"
+        android:drawableRight="@drawable/ic_clave"
+        android:layout_below="@+id/valor"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:inputType="number"
+        android:paddingEnd="20dp"
+        android:hint="Confirme el valor de la recarga"
+        android:layout_marginTop="10dp"
+        />
+    <Spinner
+        android:id="@+id/operador"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/confirmacionvalor"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edittext"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:entries="@array/operador"
+    />
+
+    <Button
+        android:id="@+id/recargar"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/operador"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#fff"
+        android:text="Recargar"
+        android:background="@drawable/backgroundboton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+</RelativeLayout>
